@@ -14,7 +14,8 @@ layout: post
 <p><img src="/assets//images/icon5.png" width="25" height="35" style="border:0px;vertical-align:middle" /> 행사 프로그램<br />
 <img src="/assets//images/example.png" alt="Alt text" /></p> -->
 
-<p>AI 반도체에서 클라우드까지, 대한민국 기술의 새로운 도약 인공지능이 산업의 경계를 다시 쓰는 지금, 클라우드는 더 이상 단순한 인프라가 아닌 AI 혁신의 심장이 되었습니다.</p>
+<h3>AI 반도체에서 클라우드까지, 대한민국 기술의 새로운 도약</h3>
+<p>인공지능이 산업의 경계를 다시 쓰는 지금, 클라우드는 더 이상 단순한 인프라가 아닌 AI 혁신의 심장이 되었습니다.</p>
 <p>openKcloud DevDay 2025는 AI 반도체와 클라우드의 융합을 통해 차세대 인공지능 서비스를 구현하는 대한민국 기술의 비전을 제시합니다.</p>
 <p>기술이 바꾸는 미래, 그 중심에 openKcloud가 함께합니다.</p>
 <p>
