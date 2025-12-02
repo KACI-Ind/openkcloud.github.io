@@ -96,7 +96,7 @@ order: 3
 
    <!-- 2025 제1회 컨퍼런스 -->
   <section class="conference">
-     <h2>openKcloud DevDay 2025(2025.11.25) v0.1.0</h2>
+     <h2>1st Conference - openKcloud DevDay 2025(2025.11.25) v0.1.0</h2>
      <!-- <div class="download-item">
       <span>v0.1.0 기술 문서 (PDF)</span>
       <a href="downloads/2024/documentation.pdf" download>다운로드</a>
