@@ -1,0 +1,89 @@
+/* 아코디언 전체 */
+.videoAccordion {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 개별 아코디언 아이템 */
+.videoAccordion-item {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+}
+
+/* 체크박스 숨기기 */
+.videoAccordion-item input {
+  display: none;
+}
+
+/* 라벨 (제목 영역) */
+.videoAccordion-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  cursor: pointer;
+  font-size: 1.05em;
+  font-weight: 600;
+  background-color: #f8fafc;
+  transition: background-color 0.2s ease;
+}
+
+.videoAccordion-label:hover {
+  background-color: #eef3f8;
+}
+
+/* 화살표 */
+.videoAccordion-arrow {
+  transition: transform 0.3s ease;
+  font-size: 1.1em;
+  color: #4a5568;
+}
+
+/* 화살표 회전 */
+.videoAccordion-item input:checked + .videoAccordion-label .videoAccordion-arrow {
+  transform: rotate(90deg);
+}
+
+/* 콘텐츠 영역 */
+.videoAccordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  background: #ffffff;
+  padding: 0 18px;
+}
+
+/* 펼쳐졌을 때 */
+.videoAccordion-item input:checked ~ .videoAccordion-content {
+  padding: 18px;
+  max-height: 1200px;
+}
+
+/* 유튜브 반응형 래퍼 */
+.videoAccordion-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.videoAccordion-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 모바일 */
+@media (max-width: 600px) {
+  .videoAccordion-label {
+    padding: 12px 14px;
+    font-size: 1em;
+  }
+}
