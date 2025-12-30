@@ -48,8 +48,8 @@ layout: post
 
   <!-- 세션 3 -->
   <div class="videoAccordion-item">
-    <input type="checkbox" id="session2">
-    <label class="videoAccordion-label" for="session2">
+    <input type="checkbox" id="session3">
+    <label class="videoAccordion-label" for="session3">
       세션 3. AI반도체에서 클라우드까지 옵저버빌리티의 모든 / 이노그리드 김바울 수석
       <span class="videoAccordion-arrow">▶</span>
     </label>
@@ -66,8 +66,8 @@ layout: post
 
     <!-- 세션 4 -->
   <div class="videoAccordion-item">
-    <input type="checkbox" id="session2">
-    <label class="videoAccordion-label" for="session2">
+    <input type="checkbox" id="session4">
+    <label class="videoAccordion-label" for="session4">
       세션 4. AI반도체 기반 AI SW 개발을 위한 IDE 동향 / 오케스트로 박의규 소장
       <span class="videoAccordion-arrow">▶</span>
     </label>
@@ -84,8 +84,8 @@ layout: post
 
     <!-- 세션 5 -->
   <div class="videoAccordion-item">
-    <input type="checkbox" id="session2">
-    <label class="videoAccordion-label" for="session2">
+    <input type="checkbox" id="session5">
+    <label class="videoAccordion-label" for="session5">
       세션 5. From Chip to Cloud - Kubernetes NPU 인프라 개발 / ETRI 차재근 선임
       <span class="videoAccordion-arrow">▶</span>
     </label>
@@ -102,8 +102,8 @@ layout: post
 
     <!-- 세션 6 -->
   <div class="videoAccordion-item">
-    <input type="checkbox" id="session2">
-    <label class="videoAccordion-label" for="session2">
+    <input type="checkbox" id="session6">
+    <label class="videoAccordion-label" for="session6">
       세션 6. From Chip to Cloud - OpenStack에서 NPU 인프라 개발 / ETRI 김수영 책임
       <span class="videoAccordion-arrow">▶</span>
     </label>
@@ -120,8 +120,8 @@ layout: post
 
     <!-- 세션 7 -->
   <div class="videoAccordion-item">
-    <input type="checkbox" id="session2">
-    <label class="videoAccordion-label" for="session2">
+    <input type="checkbox" id="session7">
+    <label class="videoAccordion-label" for="session7">
       세션 7. From Chip to Cloud - Kubernetes에서 운영 비용 최적화 스케줄러 개발 / KETI 안재훈 팀장
       <span class="videoAccordion-arrow">▶</span>
     </label>
