@@ -19,3 +19,15 @@ openKcloud DevDay 2025는 AI 반도체와 클라우드의 융합을 통해 차�
 <p align="center">
   <img src="https://cdn.nxcloud.biz/thumb/1932/meditor_item_img/1200x0_691c740ebb5e8.jpg" width="800px" alt="Alt text" />
 </p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 2rem;">
+  <iframe
+    src="https://www.youtube.com/embed/RQjdmeMs38M?si=fccS8QivIzyW4o1R"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0"
+    title="세션 1. ETRI 최현화 박사"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
