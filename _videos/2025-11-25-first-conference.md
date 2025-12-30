@@ -5,8 +5,8 @@ layout: post
 ---
 
 <h2>[녹화영상] openKcloud 1th 컨퍼런스 "openKcloud DevDay 2025" (11/25, 화)</h2>
-
-<h4>세션 1. openKcloud DevDay 2025 - AI반도체로 바꾸는 클라우드의 미래 - 도전과 기회 / ETRI 최현화 박사</h4>
+<br>
+<h3>세션 1. openKcloud DevDay 2025 - AI반도체로 바꾸는 클라우드의 미래 - 도전과 기회 / ETRI 최현화 박사</h3>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 2rem;">
   <iframe
