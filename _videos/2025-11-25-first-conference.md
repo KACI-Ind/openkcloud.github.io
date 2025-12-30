@@ -1,7 +1,7 @@
 ---
 title: First Conference
 author: openKcloud
-layout: video
+layout: post
 ---
 
 <h2>[녹화영상] openKcloud 1th 컨퍼런스 "openKcloud DevDay 2025" (11/25, 화)</h2>
