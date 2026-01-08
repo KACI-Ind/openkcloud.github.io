@@ -2,7 +2,7 @@
 layout: default
 ---
 {%- assign _videos = site.videos | sort: 'date' | reverse -%}
-{%- include header.html -%}
+{%- include header.html scrolly_nav=_videos -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
