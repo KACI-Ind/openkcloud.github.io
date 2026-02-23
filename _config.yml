@@ -67,3 +67,6 @@ collections:
   videos:
     output: true
     permalink: /videos/:name.html
+  downloads:
+    output: true
+    permalink: /downloads/:name.html
