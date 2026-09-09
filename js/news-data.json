@@ -1,4 +1,5 @@
 {
+  
   "news-v010": {
     "cat": "release",
     "date": "2025.11.27",
@@ -27,6 +28,123 @@
       { "type": "spacer" },
       { "type": "link", "text": "⬇️ GitHub에서 다운로드", "href": "https://github.com/openkcloud/openkcloud/releases" }
     ]
+  },
+  "news-PoC-Service-2026": {
+    "cat": "blog",
+    "date": "2026.07.09",
+    "tag": "공지",
+    "tagClass": "tag-blog",
+    "title": "openKcloud 1차 시범서비스 오픈",
+    "body": [
+      {
+        "type": "highlight",
+        "text": "🎉 26년도 openKcloud 플랫폼 개발 결과물 기능 통합 및 상호 운영 지원을 위한 openKcloud 커뮤니티 내 주 개발자들을 대상으로 openKcloud 1차 시범서비스를 오픈합니다."
+      },
+      { "type": "section", "title": "openKcloud 시범서비스 개요" },
+      { "type": "ul", "items": [
+        "대상 — openKcloud 커뮤니티 내 주요개발자",
+        "목적 — openKcloud 플랫폼 개발 결과물 기능 통합 및 상호 운영 지원",
+        "현황 — 25G 및 10G 기반 데이터 및 관리 네트워크 인프라 구성",
+        "<span class='news-sub-indent'>— 물리 서버 12EA 기반 AI반도체 클라우드 컴퓨팅 인프라 구성</span>",
+        "<span class='news-sub-indent'>— NVIDIA L40S (2ea), Furiosa RNGD (1ea), Rebellion Atom+ (1ea) 자원 제공</span>",
+        "<span class='news-sub-indent'>— 원활한 외부 접근 환경 제공을 위한 외부망(10G) 연동 지원</span>"
+      ]},
+      {
+        "type": "image",
+        "src": "images/poc_system.png",
+        "alt": "openKcloud 1st PoC Service"
+      }
+    ]
+  },
+  "news-v015": {
+    "cat": "release",
+    "date": "2026.06.30",
+    "tag": "RELEASE",
+    "tagClass": "tag-release",
+    "version": "v0.1.5",
+    "title": "openKcloud v0.1.5 공식 릴리스",
+    "body": [
+      {
+        "type": "highlight",
+        "text": "🎉 openKcloud v0.1.5는 v0.1.0 초기 릴리스 이후 국내 AI반도체 가속기 지원 확대, 드라이버 업그레이드 안정성 강화, NPU 메트릭 수집, 비용·전력 최적화, MLPerf 평가 기능을 고도화한 업데이트입니다."
+      },
+
+      {
+        "type": "section",
+        "title": "주요 신기능"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "<strong>kcloud-svc</strong> — FuriosaAI RNGD 및 Rebellions ATOM+ 가속기 지원 확대",
+          "<strong>kcloud-svc</strong> — 노드 디바이스 감지 및 드라이버 롤링 업그레이드 기능 지원",
+          "<strong>kcloud-opt</strong> — FuriosaAI NPU 메트릭 수집 및 워크로드 메트릭 분석 도구 지원",
+          "<strong>kcloud-opt</strong> — 비용/전력 계산 최적화 엔진, Prometheus 모니터링, Helm 원클릭 배포 지원",
+          "<strong>kcloud-opt</strong> — gRPC 기반 하드웨어 벤치마크 및 워커 노드 실시간 전력 수집 지원",
+          "<strong>kcloud-llm</strong> — MMLU-Pro 평가 및 국내 NPU 기반 MLPerf 평가 기능 지원",
+          "<strong>kcloud-mnt</strong> — 통합 관리 프레임워크 개선 예정"
+        ]
+      },
+
+      {
+        "type": "section",
+        "title": "프레임워크별 주요 변경사항"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "<strong>kcloud-svc</strong> — kcloud-operator에서 FuriosaAI RNGD, Rebellions ATOM+ 가속기와 노드 디바이스 감지 기능을 지원합니다.",
+          "<strong>kcloud-svc</strong> — kcloud-cyborg에서 Rebellions NPU 탐지 및 메타정보 수집 기능을 지원합니다.",
+          "<strong>kcloud-svc</strong> — kcloud-nova의 가속기 인식 스케줄링(product-fit) 코드가 개선되었습니다.",
+          "<strong>kcloud-opt</strong> — kcloud-monitor에서 FuriosaAI NPU 메트릭 수집, 공통 응답 규격 표준화, SSE 스트리밍 안정화가 반영되었습니다.",
+          "<strong>kcloud-opt</strong> — kcloud-cost-optimizer, kcloud-cost-scheduler, kcloud-cost-estimator를 통해 워크로드 분석, 정책 자동 적용, 비용/전력 최적화 기능이 강화되었습니다.",
+          "<strong>kcloud-llm</strong> — kcloud-mlperf에서 MMLU-Pro 평가와 FuriosaAI RNGD, Rebellions ATOM+ 기반 국내 NPU 평가를 지원합니다.",
+          "<strong>kcloud-mnt</strong> — kcloud-manage는 후속 릴리스에서 세부 변경 사항이 공개될 예정입니다."
+        ]
+      },
+      {
+        "type": "section",
+        "title": "개선 사항"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "<strong>kcloud-operator</strong> — DIP 삭제 시 드라이버 관련 상태 정보 개선",
+          "<strong>kcloud-nova</strong> — 가속기 인식 스케줄링(product-fit) 코드 개선",
+          "<strong>kcloud-monitor</strong> — 공통 응답 규격 표준화 및 SSE(Server-Sent Events) 스트리밍 안정화",
+          "<strong>kcloud-monitor</strong> — 운영성·관측성 강화 및 probes, K8s, API key, cache warmup 등 배포 안정화",
+          "<strong>kcloud-mlperf</strong> — Kubernetes Baremetal 벤치마크 자동화"
+        ]
+      },
+
+      {
+        "type": "section",
+        "title": "버그 수정"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "<strong>kcloud-requirements</strong> — OpenStack Requirements 2024.1 버전 관리 관련 의존성 문제 수정",
+          "<strong>kcloud-loci</strong> — OpenStack Loci 2024.1 버전 관리 관련 의존성 문제 수정"
+        ]
+      },
+      {
+        "type": "section",
+        "title": "시스템 요구 사항"
+      },
+      {
+        "type": "p",
+        "text": "Ubuntu 22.04 LTS · Kubernetes v1.28 이상 권장 · OpenStack 2024.1 기반 구성 요소 · FuriosaAI RNGD · Rebellions ATOM+ · Prometheus/Grafana 모니터링 환경 권장"
+      },
+
+      {
+        "type": "spacer"
+      },
+      {
+        "type": "link",
+        "text": "⬇️ GitHub에서 다운로드",
+       "href": "https://github.com/openkcloud/openkcloud/releases"
+      }     ]
   },
   "news-ecosystem": {
     "cat": "blog",
@@ -219,9 +337,9 @@
     "date": "2025.06.08",
     "tag": "공지",
     "tagClass": "tag-blog",
-    "title": "25년도 openKcloud 플랫폼 기술 개발 결과",
+    "title": "25년도 openKcloud 플랫폼 연구개발 결과 공유",
     "body": [
-      { "type": "p", "text": "26년도 openCloud 커뮤니티 1차 워크샵에서 산·학·연 주요 연구기관의 연구개발 수행 결과를 공유합니다. K8s, Openstack 확장 기반 AI반도체 연동 및 통합 관리 기술이 핵심입니다." },
+      { "type": "p", "text": "26년도 openKcloud 커뮤니티 1차 워크샵에서는 25년도 산·학·연 주요 연구기관의 연구개발 수행 결과 공유. K8s, Openstack 확장 기반 AI반도체 연동 및 통합 관리 기술이 핵심 결과물." },
       { "type": "section", "title": "연구개발 수행 결과" },
       { "type": "ul", "items": [
         "Kubernetes, Openstack 확장 기반 AI반도체 연동 및 통합 관리 기술",
@@ -249,7 +367,7 @@
   },
   "news-collabday-2026": {
     "cat": "blog",
-    "date": "2026.06.01",
+    "date": "2026.05.18",
     "tag": "공지",
     "tagClass": "tag-blog",
     "title": "openKcloud CollabDay 2026 개최",
@@ -269,5 +387,67 @@
         "alt": "openKcloud CollabDay 2026 group photo"
       }
     ]
+  },
+  "news-collabday1-2026": {
+    "cat": "blog",
+    "date": "2026.06.18",
+    "tag": "공지",
+    "tagClass": "tag-blog",
+    "title": "openKcloud CollabDay 2026 성황리 개최",
+    "body": [
+      {
+        "type": "highlight",
+        "text": "🎉 클라우드 서비스 제공사(CSP), 관리형 서비스 제공사(MSP), 데이터센터 운영 사업자, AI 서비스 사업자 등 다양한 수요기관의 높은 관심과 적극적인 참여 속에 openKcloud CollabDay 2026이 성황리에 개최되었습니다. 이번 행사는 AI반도체 클라우드 플랫폼 기술 개발 방향을 공유하고, 수요기관의 다양한 의견을 수렴하여 향후 플랫폼 개발에 반영하기 위해 마련되었습니다."
+      },
+      {
+        "type": "image",
+        "src": "images/openkcloud_collabday1_2026.png",
+        "alt": "openKcloud CollabDay 2026 conference"
+      },
+      {
+        "type": "image",
+        "src": "images/openkcloud_collabday2_2026.png",
+        "alt": "openKcloud CollabDay 2026 News"
+      }
+    ]
+  },
+  "news-k-cloud-workshop-2026": {
+    "cat": "blog",
+    "date": "2026.07.22",
+    "tag": "공지",
+    "tagClass": "tag-blog",
+    "title": "\"클라우드 분과\" 유관과제 워크샵 개최",
+    "body": [
+      {
+        "type": "highlight",
+        "text": "🎉 'AI반도체 클라우드 플랫폼 구축 및 최적화 기술 개발' 과제(대표과제, openKcloud)를 중심으로, K-클라우드 사업 클라우드 분과 내 유관과제 간 기술 개발 방향을 공유하고 단계적 기술 통합을 위한 업무 협조 체계를 마련하는 워크샵을 개최했습니다."
+      },
+      { "type": "section", "title": "워크샵 개요" },
+      { "type": "ul", "items": [
+        "일시 — 2026년 7월 15일(수) 11:30 ~ 17:30",
+        "장소 — 오케스트로 회의실",
+        "대상 — 클라우드 분과 유관과제 기관책임자 및 주요 연구기술 실무자 (ETRI, KETI, 오케스트로 등)"
+      ]},
+      {
+        "type": "image",
+        "src": "images/k-cloud_workshop_2026_group.jpg",
+        "alt": "K-클라우드 분과 유관과제 워크샵 참석자 단체 사진"
+      },
+      { "type": "section", "title": "발표 프로그램" },
+      { "type": "ul", "items": [
+        "<strong>AI반도체 클라우드 플랫폼 구축 및 최적화 기술 개발</strong> — ETRI (최현화)",
+        "<strong>AI반도체 클라우드를 위한 고속 병렬 파일시스템 기술 개발</strong> — KETI (김동민)",
+        "<strong>AI반도체 특화 클라우드 네이티브 SW 스택 및 모델 허브 기술 개발</strong> — 오케스트로 AGI (윤호영)",
+        "<strong>AI반도체 클라우드 자원관리 및 서비스 제공 플랫폼 기술 개발</strong> — ETRI (강동재)"
+      ]},
+      {
+        "type": "image",
+        "src": "images/k-cloud_workshop_2026_session.jpg",
+        "alt": "K-클라우드 분과 유관과제 워크샵 발표 현장"
+      }
+    ]
+
   }
+
+
 }
