@@ -472,6 +472,11 @@
         "text": "감사합니다."
       },
       {
+        "type": "link",
+        "text": "참가신청 바로가기 ▶",
+        "href": "https://event-us.kr/openkcloud/event/137324"
+      },
+      {
         "type": "image",
         "src": "images/devday2026.png",
         "alt": "openKcloud DevDay 2026"
