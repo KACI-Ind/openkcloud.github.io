@@ -78,6 +78,17 @@
       </p>
 
       <div class="latest-posts-grid">
+        <a href="#" class="latest-post-card" onclick="showPage('news');openNewsDrawer('news-openKcloud-DevDay-2026-before');return false;">
+          <div class="latest-post-img">
+            <img src="images/devday2026_recru.png" alt="openKcloud DevDay 2026 개최 안내">
+          </div>
+          <div class="latest-post-content">
+            <span class="latest-post-type conference">CONFERENCE</span>
+            <div class="latest-post-title">openKcloud DevDay 2026 컨퍼런스를 개최합니다.</div>
+            <div class="latest-post-date">2026.11.02</div>
+          </div>          
+        </a>
+
         <a href="#" class="latest-post-card" onclick="showPage('news');openNewsDrawer('news-k-cloud-workshop-2026');return false;">
           <div class="latest-post-img">
             <img src="images/k-cloud_workshop_2026.jpg" alt="클라우드 분과 유관과제 워크샵 개최">
@@ -109,16 +120,6 @@
             <div class="latest-post-title">openKcloud v0.1.5 공식 릴리즈 합니다. Github에 공개되었습니다.</div>
             <div class="latest-post-date">2026.06.30</div>
           </div>
-        </a>
-        <a href="#" class="latest-post-card" onclick="showPage('news');openNewsDrawer('news-collabday1-2026');return false;">
-          <div class="latest-post-img">
-            <img src="images/openkcloud_collabday1_2026.png" alt="openKcloud CollabDay 2026 성료">
-          </div>
-          <div class="latest-post-content">
-            <span class="latest-post-type conference">CONFERENCE</span>
-            <div class="latest-post-title">openKcloud CollabDay 2026 컨퍼런스가 성황리에 마무리 되었습니다.</div>
-            <div class="latest-post-date">2026.06.05</div>
-          </div>          
         </a>
       </div>
 
@@ -1417,11 +1418,29 @@
     <div class="news-filter-bar">
       <button class="news-filter-btn active" onclick="filterNews(this,'all')">전체 <span class="news-count-badge">12</span></button>
       <button class="news-filter-btn" onclick="filterNews(this,'release')">🚀 릴리스 <span class="news-count-badge">2</span></button>
-      <button class="news-filter-btn" onclick="filterNews(this,'blog')">📑 공지 &amp;💻 블로그 <span class="news-count-badge">7</span></button>
+      <button class="news-filter-btn" onclick="filterNews(this,'blog')">📑 공지 &amp;💻 블로그 <span class="news-count-badge">8</span></button>
       <button class="news-filter-btn" onclick="filterNews(this,'roadmap')">🧭 로드맵 <span class="news-count-badge">1</span></button>
       <button class="news-filter-btn" onclick="filterNews(this,'media')">📰 미디어 <span class="news-count-badge">2</span></button>
     </div>
     <div class="news-grid" id="news-grid">
+      <!-- BLOG 8 -->
+      <div class="news-card reveal" data-cat="blog" onclick="openNewsDrawer('news-openKcloud-DevDay-2026-before')">
+        <div class="news-card-img">
+          <img src="images/devday2026_recru.png" alt="openKcloud DevDay 2026" class="news-card-thumb">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">2026.11.2</span>
+            <span class="news-tag-pill tag-blog">공지</span>
+          </div>
+          <div class="news-card-title">openKcloud 2st 컨퍼런스 openKcloud DevDay 2026 개최</div>
+          <p class="news-card-excerpt">2026.11.10(화) 13:30 ~ 17:50<br>ST Center(과학기술회관) 중회의실 3</p>
+          <div class="news-card-footer">
+            <span class="news-read-more">상세 보기</span>
+            <span class="news-source-badge">컨퍼런스</span>
+          </div>
+        </div>
+      </div>
       <!-- BLOG 7 -->
       <div class="news-card reveal" data-cat="blog" onclick="openNewsDrawer('news-k-cloud-workshop-2026')">
         <div class="news-card-img">
